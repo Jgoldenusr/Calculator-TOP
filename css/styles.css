@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: #5c5858;
+}
+.main-container{
+    background-color: #000000;
+    height: 430px;
+    width: 280px;
+    margin: 100px auto;
+    border-radius: 2%;
+}
+.result-terminal{
+    background-color: #5c5858;
+    margin: 20px auto;
+    height: 80px;
+    width: 230px;
+    border-radius: 2%;
+    font-family: TenbyFive;
+    color: black;
+    text-align: right;
+}
+.history-log{
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.result-log{
+    margin: 10px 10px 10px 10px;
+    font-size: 30px;   
+    height: 30px;
+}
+.button-panel{
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px 10px;
+    justify-content: center;
+}
+.button{
+    background-color: #5c5858;
+    border-radius: 4%;
+    color: black;
+    font-family: TenbyFive;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #c4c4c4;
+    color: #5c5858;
+}
+
+@font-face {
+    font-family: 'TenbyFive';
+    src: url('../fonts/tenby-five-webfont.otf'),
+         url('../fonts/tenby-five-webfont.eot'),
+         url('../fonts/tenby-five-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tenby-five-webfont.woff2') format('woff2'),
+         url('../fonts/tenby-five-webfont.woff') format('woff'),
+         url('../fonts/tenby-five-webfont.ttf') format('truetype'),
+         url('../fonts/tenby-five-webfont.svg#TenbyFive') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.clear{
+    clear: both;
+}
